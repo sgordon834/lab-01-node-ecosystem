@@ -1,10 +1,12 @@
 'use strict';
 
-let greet = function (name) {
-  console.log('Hello ' + name);
-  if (name != '')
+const greet = function (name) {
+  if (typeof name != 'string') {
     return null;
-
+  } else {
+    return ('Hello, ' + name);
+  
+  }
 };
 
 module.exports.greet = greet;

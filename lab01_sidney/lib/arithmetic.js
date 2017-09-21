@@ -1,7 +1,7 @@
 'use strict';
 
 let addNumber = function (a, b) {
-  if (typeof a || typeof b != 'number') {
+  if (typeof a != 'number' || typeof b != 'number') {
     return null;
   } else {
     return a + b;
@@ -9,7 +9,7 @@ let addNumber = function (a, b) {
 };
 
 let subtractNumber = function (a, b) {
-  if (typeof a || typeof b != 'number') {
+  if (typeof a != 'number'|| typeof b != 'number') {
     return null;
   } else {
     return a - b;
